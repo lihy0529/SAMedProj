@@ -97,6 +97,10 @@ def trainer_synapse(args, model, snapshot_path, multimask_output, low_res):
         
             # ogi_outputs = model(inputs_batch, multimask_output,args.img_size)
             # outputslen=len(ogi_outputs)
+            # for i in range(outputslen):
+            #     ogi_outputs[i]['low_res_logits'].requires_grad_(True)
+            #     ogi_outputs[i]['masks'].float().requires_grad_(True)
+            #     ogi_outputs[i]['iou_predictions'].requires_grad_(True)
             # output_list1 = [ogi_outputs[i]['low_res_logits'][0] for i in range(outputslen)]
             # output_list2 = [ogi_outputs[i]['masks'][0] for i in range(outputslen)]
             # output_list3 = [ogi_outputs[i]['iou_predictions'][0] for i in range(outputslen)]
