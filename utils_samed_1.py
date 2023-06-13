@@ -136,7 +136,7 @@ def test_single_volume(image, label, net, classes, multimask_output, patch_size=
             # grid_points = np.column_stack((xv.ravel(), yv.ravel()))
             # fixlabel = np.copy(label[ind])
             # fixlabel[fixlabel != 0] = 1
-            # point_labels = fixlabel[grid_points[:, 1].astype(int), grid_points[:, 0].astype(int)]
+            # point_labels = fixlabel[grid_points[:, 0].astype(int), grid_points[:, 1].astype(int)]
             # point_labels = torch.tensor(point_labels).view(1, -1).cuda()
             # grid_points = np.tile(grid_points, (batch_size, 1, 1))
             # grid_points = torch.Tensor(grid_points).cuda()
