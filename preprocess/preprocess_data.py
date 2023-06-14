@@ -150,5 +150,5 @@ if __name__ == "__main__":
     image_files = sorted(glob(f"{data_root}/img/*.nii.gz"))
     label_files = sorted(glob(f"{data_root}/label/*.nii.gz"))
 
-    preprocess_train_image(image_files, label_files)
-    # preprocess_valid_image(image_files, label_files)
+    # preprocess_train_image(image_files, label_files)
+    preprocess_valid_image(image_files, label_files)
